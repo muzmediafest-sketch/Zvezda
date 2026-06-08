@@ -179,9 +179,11 @@ h1,h2,h3{margin:0; font-family:var(--font-display); font-weight:800; line-height
 /* ---------- Hero ---------- */
 .hero{min-height:100vh; display:flex; align-items:center; padding:120px 0 80px; position:relative;}
 .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:56px; align-items:center; width:100%;}
+.hero-copy,.hero-aside{min-width:0;}
+.count-card{max-width:100%;}
 .hero-badge-row{margin-bottom:28px;}
 .hero h1{
-  font-size:clamp(56px,9.5vw,150px); text-transform:uppercase; line-height:.92;
+  font-size:clamp(46px,6.4vw,104px); text-transform:uppercase; line-height:.92; overflow-wrap:break-word;
   letter-spacing:-.02em; margin:0 0 6px;
   text-shadow:0 8px 60px rgba(231,183,48,.25);
 }
@@ -678,7 +680,7 @@ section{padding:clamp(72px,10vw,128px) 0; position:relative;}
 </section>
 
 <!-- ============ WHEEL OF FORTUNE ============ -->
-<section class="wheel-sec" id="wheel">
+<section class="wheel-sec" id="wheel-section">
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow center reveal">Звёздное предсказание</span>
